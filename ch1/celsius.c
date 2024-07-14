@@ -2,16 +2,16 @@
 
 /*
 print Fahrenheit-Celsius table
-for for fahr = 0, 25, ..., 400
+for fahr = 0, 25, ..., 400
 */
 
 int main (void) {
 	float fahr, celsius;
 	float lower, upper, step;
 
-	lower = 0;			/* lower limit of temperature scale */
+	lower = 0;		/* lower limit of temperature scale */
 	upper = 400;		/* upper limit */
-	step = 25;			/* step size */
+	step = 25;		/* step size */
 	
 	printf("Fahrenheit-Celsius Table\n");
 

@@ -1,9 +1,23 @@
-#include <stdio.h>
+// C program to demonstrate the use of conditional directives.
+ #include <stdio.h>
+#include <string.h>
 
-int main(void) {
-	int result;
+#define SWITCH "on"
+ 
+#if SWITCH == "on"
+#undef SWITCH
+#define SWITCH "off"
+#elif SWITCH == "off"
+#undef SWITCH
+#define SWITCH "on"
+#else
+#undef SWITCH
+#define SWITCH "fix me"
+#endif
+ 
 
-	result = 5.0/9.0;
-
-	printf("%d\n", result);
+int main()
+{
+    printf("%s", switch); // switch = off
+    return 0;
 }
